@@ -125,7 +125,9 @@ public class Introduction extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void startButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startButtonActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
+        Game game = new Game();
+        game.setVisible(true);
     }//GEN-LAST:event_startButtonActionPerformed
 
     private void rulesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rulesButtonActionPerformed

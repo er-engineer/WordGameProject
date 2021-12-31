@@ -5,18 +5,27 @@ import javax.swing.JLabel;
 
 
 public class Helper {
+ /*   
+    public boolean guessCheck(String guess){
+        boolean result;
+        
     
-    public void updateTime(JLabel jlabel, int duration)
-    {
-        String durationText = String.format("%d:%d", duration/60, duration%60);
+        return result;
+    }
+    
+    public void updateTime(int duration, JLabel timeLabel){
+      
         Timer timer = new Timer();
         TimerTask timerTask = new TimerTask() {
             @Override
             public void run() {
-                jlabel.setText(durationText);
                 duration--;
+                timeLabel.setText(duration);
+                throw new UnsupportedOperationException("Not supported yet.");
             }
         };
-                
+        
     }
+        */
+         
 }
