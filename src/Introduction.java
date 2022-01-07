@@ -9,6 +9,7 @@
  */
 public class Introduction extends javax.swing.JFrame {
     Rules rulesFrame = new Rules();
+    
     public Introduction() {
         initComponents();
         
@@ -28,7 +29,6 @@ public class Introduction extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Kelime Oyunu");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setPreferredSize(new java.awt.Dimension(500, 500));
         setResizable(false);
         setSize(new java.awt.Dimension(500, 500));
 
@@ -128,10 +128,12 @@ public class Introduction extends javax.swing.JFrame {
         this.setVisible(false);
         Game game = new Game();
         game.setVisible(true);
+        game.setTitle("Kelime Oyunu");
     }//GEN-LAST:event_startButtonActionPerformed
 
     private void rulesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rulesButtonActionPerformed
        rulesFrame.setVisible(true);
+       rulesFrame.setTitle("Kurallar");
     }//GEN-LAST:event_rulesButtonActionPerformed
 
     public static void main(String args[]) {
